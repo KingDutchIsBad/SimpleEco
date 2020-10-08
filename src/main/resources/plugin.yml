@@ -1,0 +1,28 @@
+name: SimpleEconomy
+version: ${project.version}
+main: gitlab.kingdutchisbad.user.simpleeconomy.SimpleEconomy
+api-version: 1.16
+depend:
+  - Vault
+commands:
+  eco:
+    description: 'eco command'
+    usage: /<command>
+
+permissions:
+  SimpleEconomy.admin.help:
+    description: 'Allows players to view admin commands'
+  SimpleEconomy.admin.deposit:
+    description: 'Can give anyone money'
+  SimpleEconomy.admin.remove:
+    description: 'Can remove money from a account'
+  SimpleEconomy.admin.disable:
+    description: 'Disables the plugin'
+  SimpleEconomy.admin.reload:
+    description: 'reloads the plugin'
+  SimpleEconomy.use.help:
+    description: 'Can see economy command list'
+  SimpleEconomy.use.pay:
+    description: 'Can pay anyone money'
+  SimpleEconomy.use.Balance:
+    description: 'Can see their own balance and other players balance'
